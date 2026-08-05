@@ -1,0 +1,2016 @@
+@import "tailwindcss";
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navBar {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgb(209, 207, 207);
+}
+
+.btn {
+  border: 2px solid black;
+  background: black;
+}
+
+.btn a {
+  background-color: black;
+}
+
+.tap {
+  color: #aeaeb1;
+  cursor: pointer;
+}
+
+.tap:hover {
+  color: black;
+}
+
+.btn-login:hover {
+  background-color: #c7c7cb;
+}
+
+.btn-login:hover a {
+  background-color: #c7c7cb;
+}
+
+/* .HeroSection{
+    background-color: yellow;
+} */
+.introSection {
+  width: 50%;
+  height: 70vh;
+  margin: auto;
+  /* background-color: red; */
+}
+
+.imgSection {
+  width: 50%;
+  height: 88vh;
+  /* background-color: blue;  */
+}
+
+.imgSection img {
+  height: 100%;
+}
+
+.transpurple {
+  background-color: rgba(183, 173, 237, 0.5);
+  color: #5003cd;
+}
+
+.btnEI {
+  border: 1px solid gray;
+}
+
+.btnEI:hover {
+  background-color: #c7c7cb;
+  border: 1px solid gray;
+}
+
+.box {
+  border: 2px solid rgb(216, 214, 214);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box-img {
+  background-color: rgba(191, 181, 248, 0.5);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.box-heading {
+  font-size: 24px;
+}
+
+.box-text {
+  font-size: 18px;
+  color: rgb(152, 150, 150);
+}
+
+.box:hover {
+  border: 2px solid rgba(172, 164, 228);
+}
+
+/* .working{
+    background-color: #5003cd;
+} */
+.working-box {
+  border: 2px solid rgb(204, 200, 200);
+  box-shadow: 10px gray;
+  border-radius: 18px;
+}
+
+.working-box img {
+  height: 40vh;
+  width: 100vh;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  object-fit: cover;
+}
+
+.working-heading {
+  font-size: 22px;
+  padding: 10px 10px 0px 15px;
+}
+
+.working-text {
+  font-size: 16px;
+  color: #aeaeb1;
+  padding: 0px 10px 15px 15px;
+}
+
+.btnabout:hover {
+  background-color: #c7c7f2;
+  border: 1px solid gray;
+}
+
+.contact {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  padding: 15px;
+  /* background-color: aqua; */
+}
+
+.tile {
+  /* background-color: #aeaeb1; */
+  padding: 20px;
+  margin: 8px;
+}
+
+.tile ul li {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #919192;
+}
+
+.tile ul li:hover {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #000000;
+}
+
+/* ... existing code ... */
+
+/* DASHBOARD STYLES */
+.dashboard-bg {
+  background-color: #f9fafb;
+  /* Light gray background */
+  min-height: 100vh;
+}
+
+.card-white {
+  background-color: white;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.card-white:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Stat Cards */
+.stat-value {
+  font-size: 32px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.stat-sub {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.text-green {
+  color: #16a34a;
+}
+
+/* Chart Styles (Simple CSS Chart) */
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 200px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+.bar {
+  width: 12%;
+  background-color: #7c3aed;
+  /* Purple */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  transition: height 0.3s ease;
+}
+
+.bar:hover {
+  background-color: #6d28d9;
+}
+
+/* Quick Actions */
+.action-btn {
+  border: 1px solid rgb(229, 231, 235);
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* Campaign List */
+.campaign-row {
+  border-bottom: 1px solid rgb(243, 244, 246);
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.campaign-row:last-child {
+  border-bottom: none;
+}
+
+/* Badges */
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.badge-blue {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.badge-yellow {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+/* --- SETTINGS SCREEN STYLES --- */
+
+.settings-container {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.settings-header {
+  margin-bottom: 32px;
+}
+
+.settings-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  /* Light gray border */
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+.input-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.input-field {
+  width: 100%;
+  background-color: #f9fafb;
+  /* Very light gray bg */
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-field:focus {
+  border-color: #8b5cf6;
+  /* Purple border on click */
+}
+
+.btn-upload {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #374151;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-upload:hover {
+  background-color: #f9fafb;
+}
+
+.btn-save {
+  width: 100%;
+  background-color: #7c3aed;
+  /* Purple */
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.2);
+  transition: background-color 0.2s;
+}
+
+.btn-save:hover {
+  background-color: #6d28d9;
+  /* Darker purple */
+}
+
+/* --- REQUESTS PAGE STYLES --- */
+
+.requests-container {
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.page-subtitle {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* --- REQUEST CARD STYLES --- */
+
+.request-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s;
+}
+
+.request-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.req-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.brand-badge {
+  background-color: #f3f4f6;
+  color: #4b5563;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.req-desc {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+/* Info Bar (Gray Box) */
+.info-bar {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-label {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Tags Section */
+.tags-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tags-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.tags-row {
+  display: flex;
+  gap: 8px;
+}
+
+.req-tag {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  /* Pill shape */
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Buttons */
+.action-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.btn-req {
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 16px;
+}
+
+.btn-accept {
+  background-color: #00c950;
+  color: white;
+  border: none;
+}
+
+.btn-accept:hover {
+  background-color: #16a34a;
+}
+
+.btn-decline {
+  background-color: white;
+  border: 1px solid #fee2e2;
+  color: #ef4444;
+  /* Red text */
+}
+
+.btn-decline:hover {
+  background-color: #fef2f2;
+}
+
+.btn-view {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  /* Gray text */
+}
+
+.btn-view:hover {
+  background-color: #f9fafb;
+}
+
+/* --- LOGIN SCREEN STYLES --- */
+
+.login-bg {
+  background-color: #f3f4f6;
+  min-height: 100vh;
+}
+
+.icon-box {
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.login-input {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.login-input:focus {
+  border-color: #8b5cf6;
+  background-color: white;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.1);
+}
+
+.btn-login-outline {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  transition: background-color 0.2s;
+}
+
+.btn-login-outline:hover {
+  background-color: #f9fafb;
+}
+
+.btn-login-primary {
+  background-color: #7c3aed;
+  color: white;
+  border: 1px solid #7c3aed;
+  transition: background-color 0.2s;
+}
+
+.btn-login-primary:hover {
+  background-color: #6d28d9;
+}
+
+/* --- SIGN UP SCREEN STYLES --- */
+
+/* The Pill-shaped Toggle Container */
+.toggle-bg {
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  padding: 4px;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Individual Toggle Buttons */
+.toggle-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  transition: all 0.2s ease;
+}
+
+/* The Active State (White Background + Shadow) */
+.toggle-item.active {
+  background-color: white;
+  color: #111827;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Create Account Buttons */
+.btn-create-influencer {
+  width: 100%;
+  background-color: #a855f7;
+  /* Light Purple */
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-create-influencer:hover {
+  background-color: #9333ea;
+}
+
+.btn-create-business {
+  width: 100%;
+  background-color: #6b7280;
+  color: white;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.btn-create-business:hover {
+  background-color: #4b5563;
+}
+
+/* --- RESET PASSWORD SCREEN STYLES --- */
+
+.btn-reset {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-reset:hover {
+  background-color: #1f2937;
+  /* Dark Gray hover */
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: #4b5563;
+}
+
+/* --- BUSINESS DASHBOARD STYLES --- */
+
+.business-bg {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.business-nav {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0 32px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-right: 24px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-link.active {
+  color: #7c3aed;
+  /* Purple */
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #111827;
+}
+
+/* Stat Cards */
+.stat-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  transition: box-shadow 0.2s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.stat-number {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111827;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.stat-trend {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.trend-up {
+  color: #16a34a;
+}
+
+/* Green */
+.trend-neutral {
+  color: #6b7280;
+}
+
+/* Gray */
+
+/* Quick Actions */
+.action-section {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.btn-create-campaign {
+  background-color: #6d28d9;
+  /* Deep Purple */
+  color: white;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-create-campaign:hover {
+  background-color: #5b21b6;
+}
+
+.search-influencer {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+  outline: none;
+  color: #111827;
+  transition: border-color 0.2s;
+}
+
+.search-influencer:focus {
+  border-color: #8b5cf6;
+}
+
+/* Charts & Activity */
+.dashboard-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  height: 100%;
+}
+
+.chart-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.chart-subtitle {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+/* Activity List */
+.activity-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tag-purple {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+}
+
+.tag-blue {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.tag-green {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+/* --- CAMPAIGNS SCREEN STYLES --- */
+
+/* Page Background */
+.campaigns-bg {
+  background-color: #f9fafb;
+  /* Light gray */
+  min-height: 100vh;
+}
+
+/* The Main Card Style */
+.campaign-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s;
+}
+
+.campaign-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Status Badge (Green Pill) */
+.status-badge {
+  background-color: #dcfce7;
+  /* Light Green bg */
+  color: #15803d;
+  /* Dark Green text */
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+/* Progress Bar Styles */
+.progress-container {
+  width: 100%;
+  * --- FIND INFLUENCERS SCREEN STYLES --- */
+
+/* Page Background */
+.find-bg {
+    background-color: #f9fafb;
+    min-height: 100vh;
+  }
+
+  /* Filter Sidebar */
+  .filter-sidebar {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    height: fit-content;
+  }
+
+  .filter-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .filter-select {
+    width: 100%;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    color: #4b5563;
+    outline: none;
+    margin-bottom: 20px;
+  }
+
+  .range-slider {
+    width: 100%;
+    accent-color: #8b5cf6;
+    /* Purple slider */
+    margin-bottom: 20px;
+  }
+
+  /* Influencer Card */
+  .influencer-card {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .influencer-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-color: #d1d5db;
+    transform: translateY(-2px);
+  }
+
+  .verified-badge {
+    color: #3b82f6;
+    /* Blue checkmark */
+    margin-left: 6px;
+  }
+
+  .info-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  /* Buttons */
+  .btn-card-view {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+
+  .btn-card-view:hover {
+    background-color: #f9fafb;
+  }
+
+  .btn-card-contact {
+    flex: 1;
+    background-color: #8b5cf6;
+    /* Purple */
+    color: white;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #8b5cf6;
+    transition: background-color 0.2s;
+  }
+
+  .btn-card-contact:hover {
+    background-color: #7c3aed;
+  }
+
+  .trust-score-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #f3f4f6;
+    font-size: 14px;
+  }
+  background-color: #f3f4f6;
+  /* Light gray track */
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: #8b5cf6;
+  /* Purple fill */
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+/* Buttons */
+.btn-create-purple {
+  background-color: #8b5cf6;
+  color: white;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-create-purple:hover {
+  background-color: #7c3aed;
+}
+
+.btn-action-outline {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.btn-action-outline:hover {
+  background-color: #f9fafb;
+}
+
+.meta-text {
+  color: #6b7280;
+  font-size: 14px;
+  margin-right: 24px;
+}
+
+/* --- NOTIFICATION SCREEN STYLES --- */
+
+.notifications-bg {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Header Buttons */
+.btn-back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #111827;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-mark-read {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-mark-read:hover {
+  background-color: #f3f4f6;
+}
+
+/* Tabs Container (The Gray Pill) */
+.tabs-container {
+  background-color: #f3f4f6;
+  /* Light gray background */
+  border-radius: 12px;
+  padding: 4px;
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.tab-item:hover {
+  color: #111827;
+}
+
+.tab-item.active {
+  background-color: white;
+  color: #111827;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+}
+
+/* Notification Card */
+.notif-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.notif-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* The Purple Border for Unread items */
+.notif-card.unread {
+  border-left: 4px solid #8b5cf6;
+}
+
+/* Icon Circles */
+.notif-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.icon-blue {
+  background-color: #eff6ff;
+  color: #3b82f6;
+}
+
+/* Blue for Campaigns */
+.icon-green {
+  background-color: #ecfdf5;
+  color: #10b981;
+}
+
+/* Green for Messages */
+.icon-purple {
+  background-color: #f5f3ff;
+  color: #8b5cf6;
+}
+
+/* Purple for Approvals */
+
+/* Text Styles */
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.notif-title {
+  font-weight: 600;
+  color: #111827;
+  font-size: 15px;
+}
+
+.notif-time {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.notif-desc {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Unread Tag */
+.badge-unread {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+/* The Count Badge in Tabs */
+.tab-count {
+  background-color: #8b5cf6;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+/* --- ACCOUNT SETTINGS SCREEN STYLES --- */
+
+.account-bg {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Common Card Style */
+.settings-section-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Input Fields */
+.settings-input {
+  width: 100%;
+  background-color: #f3f4f6;
+  /* Light gray background like screenshot */
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #111827;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.settings-input:focus {
+  background-color: white;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.1);
+}
+
+.settings-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+/* Update Password Button */
+.btn-update-pass {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-update-pass:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+/* Toggle Switch Styles */
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.toggle-row:last-child {
+  border-bottom: none;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.toggle-switch.active {
+  background-color: #111827;
+  /* Black active state like screenshot */
+}
+
+.toggle-circle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.toggle-switch.active .toggle-circle {
+  transform: translateX(20px);
+}
+
+/* Danger Zone Specifics */
+.danger-card {
+  border: 1px solid #fecaca;
+  /* Red border */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.danger-text {
+  color: #dc2626;
+  /* Red text */
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.btn-danger-outline {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  color: #dc2626;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-danger-outline:hover {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+}
+
+/* Save Button */
+.btn-save-primary {
+  width: 100%;
+  background-color: #6d28d9;
+  color: white;
+  font-weight: 600;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-save-primary:hover {
+  background-color: #5b21b6;
+}
+
+/* --- MESSAGES SCREEN STYLES --- */
+
+.messages-page {
+  background-color: #f9fafb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* User's Message (Purple) */
+.msg-bubble-me {
+  background-color: #8b5cf6;
+  color: white;
+  border-radius: 12px 12px 0 12px;
+  /* Pointy on bottom-right */
+}
+
+/* Other's Message (White) */
+.msg-bubble-other {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  border-radius: 12px 12px 12px 0;
+  /* Pointy on bottom-left */
+}
+
+/* --- CREATE CAMPAIGN STYLES --- */
+
+/* Stepper Component */
+.stepper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #e5e7eb;
+  /* Gray default */
+  color: #6b7280;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s;
+}
+
+.step-circle.active {
+  background-color: #8b5cf6;
+  /* Purple */
+  color: white;
+}
+
+.step-line {
+  height: 4px;
+  width: 100px;
+  background-color: #e5e7eb;
+  margin: 0 8px;
+  transition: all 0.3s;
+}
+
+.step-line.active {
+  background-color: #8b5cf6;
+}
+
+/* Form Elements */
+.campaign-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #f3f4f6;
+  /* Light gray background */
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: #111827;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  background-color: white;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.1);
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.helper-text {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Custom Selectable Box (for Step 2 & 3) */
+.selection-box {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: white;
+}
+
+.selection-box:hover {
+  border-color: #d1d5db;
+}
+
+.selection-box.selected {
+  border-color: #8b5cf6;
+  background-color: #f5f3ff;
+  color: #7c3aed;
+  font-weight: 500;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+* --- FIND INFLUENCERS SCREEN STYLES --- */
+
+/* Page Background */
+.find-bg {
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+/* Filter Sidebar */
+.filter-sidebar {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  height: fit-content;
+}
+
+.filter-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.filter-select {
+  width: 100%;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  color: #4b5563;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.range-slider {
+  width: 100%;
+  accent-color: #8b5cf6;
+  /* Purple slider */
+  margin-bottom: 20px;
+}
+
+/* Influencer Card */
+.influencer-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.influencer-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-color: #d1d5db;
+  transform: translateY(-2px);
+}
+
+.verified-badge {
+  color: #3b82f6;
+  /* Blue checkmark */
+  margin-left: 6px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.btn-card-view {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  color: #374151;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-card-view:hover {
+  background-color: #f9fafb;
+}
+
+.btn-card-contact {
+  flex: 1;
+  background-color: #8b5cf6;
+  /* Purple */
+  color: white;
+  font-weight: 500;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  transition: background-color 0.2s;
+}
+
+.btn-card-contact:hover {
+  background-color: #7c3aed;
+}
+
+.trust-score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #f3f4f6;
+  font-size: 14px;
+}
+
+/* ================================================================
+   MASHHOOR — RESPONSIVE STYLES
+   Breakpoints:
+     Mobile:  < 640px
+     Tablet:  640px – 1024px
+     Desktop: > 1024px
+   ================================================================ */
+
+/* ── Public Navbar ───────────────────────────────────────────── */
+.navBar {
+  padding: 0.5rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+  .navBar .Menu {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .navBar .Menu button,
+  .navBar .Menu div {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+/* ── Hero Section ────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .HeroSection {
+    flex-direction: column !important;
+    margin: 1rem !important;
+    gap: 2rem;
+  }
+  .introSection {
+    width: 100% !important;
+    height: auto !important;
+    text-align: center;
+  }
+  .introSection .text-6xl {
+    font-size: 2.25rem !important;
+  }
+  .introSection .flex.gap-5 {
+    justify-content: center;
+  }
+  .introSection .stats {
+    justify-content: center !important;
+    gap: 1.5rem !important;
+  }
+  .imgSection {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .imgSection img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+}
+
+/* ── Features Grid ───────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .features {
+    margin: 1rem !important;
+  }
+  .features .text-4xl {
+    font-size: 1.75rem !important;
+  }
+  .gridbox {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Working Section ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .working {
+    margin: 2rem 1rem !important;
+  }
+  .working > div.p-5 {
+    flex-direction: column !important;
+  }
+  .working-box img {
+    width: 100% !important;
+    height: 200px !important;
+  }
+}
+
+/* ── About / Footer ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .about {
+    margin: 1rem 0 !important;
+  }
+  .about .container {
+    margin: 0 1rem !important;
+    padding: 1.5rem !important;
+  }
+  .contact {
+    flex-direction: column !important;
+    padding: 1rem !important;
+    gap: 0 !important;
+  }
+  .tile {
+    padding: 0.75rem !important;
+    margin: 0 !important;
+  }
+}
+
+/* ── Auth Pages ──────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem !important;
+    border-radius: 1rem !important;
+  }
+  .login-bg {
+    padding: 1rem !important;
+  }
+}
+
+/* ── Business Nav ────────────────────────────────────────────── */
+.business-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+@media (max-width: 900px) {
+  .business-nav > div:first-child {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .nav-link {
+    font-size: 0.8rem !important;
+    padding: 0.4rem 0.6rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .business-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ── Dashboard Stats Grid ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .grid.grid-cols-4 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid.grid-cols-4 {
+    grid-template-columns: 1fr !important;
+  }
+  .grid.grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .business-bg .p-8,
+  .dashboard-bg .p-8 {
+    padding: 1rem !important;
+  }
+  .stat-number {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* ── Find Influencers Page ───────────────────────────────────── */
+@media (max-width: 1024px) {
+  .find-influencers-layout {
+    flex-direction: column !important;
+  }
+  .find-influencers-layout > div:first-child {
+    width: 100% !important;
+    position: static !important;
+  }
+  .find-influencers-layout > div:last-child {
+    width: 100% !important;
+  }
+  .find-influencers-layout .grid.grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .find-influencers-layout .grid.grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── Messages Page ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .messages-page > div {
+    flex-direction: column !important;
+    padding: 0.75rem !important;
+    gap: 0.75rem !important;
+    height: auto !important;
+  }
+  .messages-page .w-1\/3 {
+    width: 100% !important;
+    max-height: 200px;
+  }
+  .messages-page .flex-1 {
+    min-height: 400px;
+  }
+}
+
+/* ── Campaign Card ───────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .campaign-card {
+    padding: 1.25rem !important;
+  }
+  .campaign-card .flex.gap-3 {
+    flex-wrap: wrap;
+  }
+  .campaign-card .flex.gap-3 button {
+    flex: 1;
+    min-width: 80px;
+  }
+}
+
+/* ── Create Campaign ─────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .stepper-container {
+    margin-bottom: 1.5rem !important;
+  }
+  .step-line {
+    width: 50px !important;
+  }
+  .campaign-card {
+    margin: 0 0.5rem !important;
+    padding: 1.25rem !important;
+  }
+}
+
+/* ── Account Settings ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .account-bg .grid.grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .account-bg .p-8 {
+    padding: 1rem !important;
+  }
+}
+
+/* ── Influencer Dashboard ────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .dashboard-bg .flex.gap-6 {
+    flex-direction: column !important;
+  }
+  .dashboard-bg .w-2\/3,
+  .dashboard-bg .w-1\/3 {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .dashboard-bg .flex.gap-6.mb-8 {
+    gap: 0.75rem !important;
+  }
+  .card-white {
+    padding: 1rem !important;
+  }
+  .stat-value {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* ── Influencer Settings ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .settings-bg .grid.grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+  .settings-bg .p-8 {
+    padding: 1rem !important;
+  }
+  .settings-bg .flex.gap-6 {
+    flex-direction: column !important;
+  }
+  .settings-bg .w-1\/3 {
+    width: 100% !important;
+  }
+}
+
+/* ── Notifications Page ──────────────────────────────────────── */
+@media (max-width: 640px) {
+  .notifications-bg .p-8 {
+    padding: 1rem !important;
+  }
+  .tabs-container {
+    flex-wrap: wrap !important;
+    gap: 0.25rem !important;
+  }
+  .notif-card {
+    padding: 0.75rem !important;
+  }
+}
+
+/* ── CampaignDetail (Influencer) ─────────────────────────────── */
+@media (max-width: 768px) {
+  .campaign-detail-layout {
+    flex-direction: column !important;
+    padding: 1rem !important;
+  }
+  .campaign-detail-layout > div {
+    width: 100% !important;
+  }
+}
+
+/* ── Global Utility ──────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .text-4xl { font-size: 1.75rem !important; }
+  .text-3xl { font-size: 1.5rem !important; }
+  .text-2xl { font-size: 1.125rem !important; }
+  .p-8 { padding: 1rem !important; }
+  .mx-10 { margin-left: 1rem !important; margin-right: 1rem !important; }
+  .gap-8 { gap: 1rem !important; }
+}
